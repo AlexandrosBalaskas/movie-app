@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: rgb(11, 3, 27);
+}
+.header{
+    color: white;
+    margin: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: rgb(30, 29, 36);
+}
+.left{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 20px;
+    
+}
+.navbar img{
+    width: 150px;
+    
+}
+.navbar i{
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.navbar input{
+    margin: 15px;
+    width: 300px;
+    border-radius: 7px;
+    padding: 8px;
+    border: 1px solid gray;
+    background-color:rgb(30, 29, 36) ;
+    color: white;
+}
+.flex::-webkit-scrollbar {
+    width: 8px;
+    height: 12px;               
+  }
+  
+.flex::-webkit-scrollbar-track {
+    background: rgb(11, 3, 27);        
+  }
+  
+.flex::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);    
+    border-radius: 20px;       
+    border: 1px solid rgb(71, 71, 71);  
+  }
+.flex{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: rgb(11, 3, 27);
+    margin-bottom: 50px;
+}
+.flexWrap{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    background-color: rgb(11, 3, 27);
+}
+.cards{
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 350px;
+}
+.cards img{
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+}
+h2{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.backgroundImg{
+    height: 89vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    display: block;
+    opacity: 0.9;
+    filter: blur(15px);
+
+}
+.bigBox{
+    z-index: 9999;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px black;
+
+}
+.imageBox{
+    width: 270px;
+    height: 400px;
+}
+.imageBox img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.imageBox a{
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+.imageBox a h1{
+    color: yellow;
+    font-size: 18px;
+    font-weight: 500;
+}
+.desc{
+    position: relative;
+    margin-left: 50px;
+    width: 60%;
+    margin-right: 100px;
+}
+.desc h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.desc h3{
+    font-size: 17px;
+    font-weight: 500;
+}
+.desc h4{
+    margin-top: 50px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.desc p{
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.opening-box ul li{
+    display: inline-block;
+    padding: 5px;
+    margin: 3px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.opening-box ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#opening-box{
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    z-index: 99999;
+    pointer-events: none;
+    top: 65px;
+    left: 0px;
+    width: 200px;
+    height: 0px;
+    background-color: rgb(30, 29, 36);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pagination{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    overflow-x: hidden;
+}
+.pagination .item{
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid red;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+@media (max-width:700px) {
+    .bigBox{
+        position: relative;
+        top: 0vh;
+        align-items: center;
+        flex-direction: column;
+    }
+    .imageBox a {
+        margin-bottom: 10px;
+    }
+    .desc{
+        top: 100px;
+        width: 90%;
+        margin-left:25%;
+    }
+    .desc h1{
+        font-size: 25px;
+    }
+    .desc h3{
+        font-size: 13px;
+    }
+    .desc h4{
+        margin-top: 10px;
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+    .desc p{
+        margin: 0;
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    .imageBox{
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .navbar img{
+        width: 30vw;
+        max-width: 120px;
+    }
+    .navbar input{
+        display: inline-block;
+        width: 30vw;
+    }
+    .navbar i{
+        
+        left: 10px;
+    }
+    .cards{
+        width: 100px;
+        height: 170px;
+        margin-bottom: 40px;
+    }
+    .cards h2{
+        font-size: 11px;
+    }
+    .cards img{
+        width: 100px;
+        height: 170px;
+    }
+    .flex {
+        margin: 0;
+        height: 240px;
+    }
+    .flexWrap{
+        justify-content: center;
+    }
+    .header{
+        font-size: 10px;
+    }
+    .backgroundImg{
+        height: 0vh;
+    }
+}
